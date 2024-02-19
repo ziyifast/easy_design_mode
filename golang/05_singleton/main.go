@@ -5,7 +5,7 @@ import (
 	"sync"
 )
 
-// 懒汉式：用到才加载
+// 懒汉式：用到才加载【饿汉式：直接放在init方法里，程序一启动就创建好】
 var (
 	instance *Singleton
 	once     = sync.Once{}
